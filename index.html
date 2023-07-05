@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="hide()">×</a>
+        <h2>Admin Panel</h2>
+        <button class="side_button">Manage Categories</button>
+        <a href="#">Add company</a>
+        <a href="#">Add new user</a>
+        <a href="#">Add new certificates</a>
+        <a href="#">Add students</a>
+        <a href="#">Add MCQ questions</a>
+        <a href="#">University Action</a>
+        <a href="#">Recruiters and Jobs</a>
+        <a href="#">Universities</a>
+        <a href="#">View All Users</a>
+        <a href="#">Trial Version</a>
+        <a href="#">Add Blogs</a>
+     </div>
+     <div id="content">
+        <button class="openbtn" id="openbtn" onclick="show()">☰</button>
+
+
+        
+     </div>
+
+     <script>
+        function show() {
+           document.getElementById("mySidebar").style.width = "250px";
+           document.getElementById("content").style.marginLeft = "250px";
+        }
+        function hide() {
+           document.getElementById("mySidebar").style.width = "0";
+           document.getElementById("content").style.marginLeft = "0";
+        }
+     </script>
+
+</body>
+</html>
